@@ -4,6 +4,8 @@ public class FindElements {
 
     TreeNode treeNode;
 
+    // This instantiates the FindElements object. If the value of the TreeNode is -1,
+    // it is corrupted, and we need to call a helper method to properly recover it.
     public FindElements(TreeNode root) {
 
         treeNode = root;
@@ -13,6 +15,8 @@ public class FindElements {
 
     }
 
+    // This method searches for int target within the TreeNode of the current FindElements
+    // object, and searches the TreeNode object in lower branches to see if the value exists there.
     public boolean find(int target) {
 
         if (treeNode.val == target) { return true; }
@@ -31,6 +35,7 @@ public class FindElements {
 
     }
 
+    // This helper method generates values for the tree node structure as per challenge specifications.
     private void generateValue(TreeNode root, int value) {
 
         root.val = value;

@@ -2,7 +2,7 @@ package com.project.solution;
 
 import java.util.HashSet;
 
-class FindElements {
+public class FindElements {
 
     HashSet<Integer> seen;
 

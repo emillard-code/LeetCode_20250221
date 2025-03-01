@@ -1,5 +1,6 @@
 package com.project.attempt;
 
+// TreeNode class is implemented exactly as provided by challenge specifications.
 public class TreeNode {
 
     int val;
@@ -10,11 +11,11 @@ public class TreeNode {
 
     }
 
-    TreeNode(int val) {
+    public TreeNode(int val) {
         this.val = val;
     }
 
-    TreeNode(int val, TreeNode left, TreeNode right) {
+    public TreeNode(int val, TreeNode left, TreeNode right) {
 
         this.val = val;
         this.left = left;
